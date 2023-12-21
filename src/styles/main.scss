@@ -1,0 +1,36 @@
+@use 'variaveis';
+@use 'header';
+@use 'hero';
+@use 'description';
+@use 'footer';
+
+@font-face {
+    font-family: Street2;
+    src: url(../../assets/fonts/street-2-thin.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Street2;
+    src: url(../../assets/fonts/street-2-book.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: Street2;
+    src: url(../../assets/fonts/street-2-medium.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Street2;
+    src: url(../../assets/fonts/street-2-bold.ttf);
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Street2, sans-serif;
+    list-style: none;
+}

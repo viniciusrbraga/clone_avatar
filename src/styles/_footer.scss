@@ -1,0 +1,86 @@
+@use 'variaveis';
+
+.footer {
+    background-color: variaveis.$corDeFundoFooter;
+    color: variaveis.$corDaFonteFooter;
+    padding-bottom: 26px;
+    padding-top: 30px;
+
+    &__container {
+        max-width: 926px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 14px;
+        font-weight: 100;
+
+        &__image {
+            margin: auto;
+            display: flex;
+        }
+
+        &__about {
+            display: flex;
+            margin-top: 25px;
+            justify-content: center;
+            text-align: center;
+
+            &__item {
+                text-transform: uppercase;
+
+                @media (max-width: 637px) {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                &__link {
+                    font-size: 12.8px;
+                    text-decoration: none;
+                    padding-left: 11px;
+                    padding-right: 10px;
+                    color: variaveis.$corDaFonteFooter;
+                    
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+            }
+        }
+
+        &__privacy {
+            display: flex;
+            margin-top: 24px;
+            font-size: 11px;
+            justify-content: center;
+
+            &__item {
+
+                &__link {
+                    text-decoration: none;
+                    padding-left: 12px;
+                    padding-right: 12px;
+                    color: variaveis.$corDaFonteFooter;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        &__rights {
+            margin-top: 23px;
+            font-size: 11px;
+            justify-content: center;
+            display: flex;
+        }
+
+        &__alert {
+            font-size: 11px;
+            margin-top: 8px;
+            justify-content: center;
+            display: flex;
+        }
+    }
+}

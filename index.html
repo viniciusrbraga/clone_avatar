@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar | Watch the Movie on HBO | HBO.com</title>
+    <link rel="stylesheet" href="dist/css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="left">
+                <div id="burger-btn" onclick="funcao()" class="header__container__hamburger">
+                    <div class="header__container__hamburger__traco"></div>
+                    <div class="header__container__hamburger__traco"></div>
+                    <div class="header__container__hamburger__traco"></div>
+                </div>
+                <img src="./dist/images/hbo-logo-blk.svg" alt="HBO" class="header__container__logo">
+            </div>
+            <div class="header__container__menu">
+                <ul class="header__container__menu__list">
+                    <li class="header__container__menu__list__item">
+                        <a href="#">Series</a>
+                    </li>
+                    <li class="header__container__menu__list__item">
+                        <a href="#">Movies</a>
+                    </li>
+                    <li class="header__container__menu__list__item">
+                        <a href="#">New & last chance</a>
+                    </li>
+                    <li class="header__container__menu__list__item">
+                        <a href="#">Schedule</a>
+                    </li>
+                    <li class="header__container__menu__list__item">
+                        <a href="#">Free episodes</a>
+                    </li>
+                    <li class="header__container__menu__list__item">
+                        <div class="header__container__menu__list__item__dropdown">
+                            <button onclick="myFunction()" class="dropbtn">More
+                                <i id="myArrow" class="dropbtn arrow down"></i>
+                            </button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#">Documentaries</a>
+                                <a href="#">Specials</a>
+                                <a href="#">Sports</a>
+                                <a href="#">Podcasts</a>
+                                <a href="#">Max</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__container__sing">
+                <button class="header__container__sing__secundario">
+                    <a href="#">Sign in</a>
+                </button>
+                <button class="header__container__sing__button">
+                    <a href="#">Sing up for</a>
+                    <img src="./dist/images/max_w_trans.png">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div id="burger-menu" class="header__container__menu-hamburguer mostra">
+        <ul class="header__container__menu-hamburguer__list">
+            <li class="header__container__menu-hamburguer__list__item">
+                <a href="#">Series</a>
+            </li>
+            <li class="header__container__menu-hamburguer__list__item">
+                <a href="#">Movies</a>
+            </li>
+            <li class="header__container__menu-hamburguer__list__item">
+                <a href="#">New & last chance</a>
+            </li>
+            <li class="header__container__menu-hamburguer__list__item">
+                <a href="#">Schedule</a>
+            </li>
+            <li class="header__container__menu-hamburguer__list__item">
+                <a href="#">Free episodes</a>
+            </li>
+            <li class="header__container__menu-hamburguer__list__item">
+                <a href="#">Documentaries</a>
+            </li>
+            <li class="header__container__menu-hamburguer__list__item">
+                <a href="#">Specials</a>
+            </li>
+            <li class="header__container__menu-hamburguer__list__item">
+                <a href="#">Sports</a>
+            </li>
+            <li class="header__container__menu-hamburguer__list__item">
+                <a href="#">Podcasts</a>
+            </li>
+            <li class="header__container__menu-hamburguer__list__item">
+                <a href="#">Max</a>
+            </li>
+        </ul>
+    </div>
+
+    <section id="hero" class="hero">
+        <div class="hero__fundo">
+            <img src="./dist/images/tile.jpeg" alt="Avatar" class="blurred">
+            <img src="./dist/images/tile.jpeg" alt="Avatar" class="hero__fundo__image">
+        </div>
+    </section>
+
+    <section id="informations" class="informations">
+        <div class="description">
+            <h1 class="description__title">Avatar</h1>
+            <p class="description__details">PG-13 | fantasy-sci-fi | 2 HR 43 MIN | 2009</p>
+            <button class="description__button">
+                <a href="#">Watch nown</a>
+                <img src="./dist/images/max_w_trans.png">
+            </button>
+            <p class="description__synopsis">Set in the year 2154, James Cameron's sci-fi epic follows the U.S. military
+                effort to mine an extremely valuable mineral from a distant world called Pandora. When a paraplegic
+                ex-Marine becomes an Avatar to Pandora, he is taken in by a feisty female native and taught the customs.
+                But
+                when romance ensues, he finds himself at the center of the battle for control of Pandora.</p>
+        </div>
+    </section>
+
+    <div id="banner" class="banner">
+        <img src="./dist/images/max-banner-flat-desktop.avif">
+    </div>
+    <div id="banner-mobile" class="banner-mobile">
+        <img src="./dist/images/max-banner-flat-mobile.avif">
+    </div>
+
+    <footer id="footer" class="footer">
+        <div class="footer__container">
+            <img src="./dist/images/hbo-logo-footer.svg" alt="HBO" class="footer__container__image">
+            
+            <div class="footer__container__about">
+                <div class="footer__container__about__item">
+                    <a class="footer__container__about__item__link" href="#">About</a>
+                    <a class="footer__container__about__item__link" href="#">Get HBO</a>
+                    <a class="footer__container__about__item__link" href="#">Help</a>
+                    <a class="footer__container__about__item__link" href="#">Shop</a>
+                    <a class="footer__container__about__item__link" href="#">Careers</a>
+                    <a class="footer__container__about__item__link" href="#">HBO Inspires</a>
+                    <a class="footer__container__about__item__link" href="#">How to watch max</a>
+                </div>
+            </div>
+            <ul class="footer__container__privacy">
+                <li class="footer__container__privacy__item">
+                    <a class="footer__container__privacy__item__link" href="#">Privacy Policy</a>
+                </li>
+                <li class="footer__container__privacy__item">
+                    <a class="footer__container__privacy__item__link" href="#">Terms of Use</a>
+                </li>
+                <li class="footer__container__privacy__item">
+                    <a class="footer__container__privacy__item__link" href="#">Ad Choices</a>
+                </li>
+                <li class="footer__container__privacy__item">
+                    <a class="footer__container__privacy__item__link" href="#">Gerenciar Preferências</a>
+                </li>
+            </ul>
+            <p class="footer__container__rights">© 2023 Home Box Office, Inc. All Rights Reserved.</p>
+            <p class="footer__container__alert">This website may contain mature content.</p>
+        </div>
+    </footer>
+    <script src="./dist/js/main.js"></script>
+</body>
+
+</html>

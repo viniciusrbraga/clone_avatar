@@ -1,0 +1,322 @@
+@use 'variaveis';
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: variaveis.$corDeFundoHeader;
+    height: 58px;
+    justify-content: space-between;
+
+    @media (max-width: 1200px) {
+        height: 44px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+
+        &__hamburger {
+            display: none;
+            margin-top: 15px;
+            margin-left: 7px;
+
+            @media (max-width: 1200px) {
+                display: block;
+                margin-left: 0px;
+            }
+
+            &__traco {
+                height: 2px;
+                line-height: 20px;
+                width: 22px;
+                background-color: variaveis.$corDaFonte;
+                margin-bottom: 4px;
+            }
+        }
+
+        &__logo {
+            max-width: 63px;
+            margin-left: 12px;
+            padding-top: 16px;
+
+            @media (max-width: 1200px) {
+                margin-left: 32px;
+                padding-top: 8px;
+            }
+        }
+
+        &__menu {
+            margin-left: 56px;
+            margin-top: 4px;
+            font-weight: 100;
+            font-size: 11px;
+            color: variaveis.$corDaFonte;
+
+            @media (max-width: 1200px) {
+                display: none;
+            }
+
+            &__list {
+                text-transform: uppercase;
+                display: flex;
+                margin-top: 10px;
+
+                &__item {
+                    padding-bottom: 8px;
+                    padding-right: 22px;
+                    padding-top: 8px;
+
+                    a {
+                        text-decoration: none;
+                    }
+
+                    &__dropdown {
+                        position: relative;
+                        display: inline-block;
+
+                        .dropbtn {
+                            background-color: variaveis.$corDeFundoHeader;
+                            color: variaveis.$corDaFonte;
+                            font-weight: 100;
+                            font-size: 11px;
+                            text-transform: uppercase;
+                            border: none;
+                            cursor: pointer;
+                        }
+
+                        .dropbtn:hover,
+                        .dropbtn:focus {
+                            background-color: variaveis.$corDeFundoHeader;
+                        }
+
+                        .dropdown-content {
+                            display: none;
+                            position: absolute;
+                            background-color: variaveis.$corDeFundoHeader;
+                            min-width: 160px;
+                        }
+
+                        .dropdown-content a {
+                            color: variaveis.$corDaFonte;
+                            padding: 12px 16px;
+                            text-decoration: none;
+                            display: block;
+                        }
+
+                        .dropdown-content a:hover {
+                            background-color: variaveis.$corDeFundoHeader;
+                        }
+
+                        .show {
+                            display: block;
+                        }
+
+                        .arrow {
+                            border: solid variaveis.$corDaFonte;
+                            border-width: 0 1px 1px 0;
+                            display: inline-block;
+                            padding: 3px;
+                            margin-left: 9px;
+                            margin-bottom: 4px;
+                        }
+
+                        .down {
+                            transform: rotate(45deg);
+                            -webkit-transform: rotate(45deg);
+                            transition: all 0.5s;
+                        }
+
+                        .up {
+                            transform: rotate(-135deg);
+                            -webkit-transform: rotate(-135deg);
+                            transition: all 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__sing {
+            box-sizing: border-box;
+            margin-top: 10px;
+            margin-left: 228px;
+
+            @media (max-width: 1200px) {
+                margin-top: 4px;
+                margin-left: 600px;
+            }
+
+            @media (max-width: 1012px) {
+                margin-top: 4px;
+                margin-left: 360px;
+            }
+
+            @media (max-width: 767px) {
+                margin-top: 4px;
+                margin-left: 170px;
+            }
+
+            @media (max-width: 575px) {
+                margin-top: 4px;
+                margin-left: auto;
+            }
+
+            a {
+                text-decoration: none;
+                color: variaveis.$corDaFonteBotaoPrincipal;
+            }
+
+            &__button {
+                background-color: variaveis.$corDeFundoBotaoPrincipal;
+                border: none;
+                font-size: 11px;
+                padding: 12px;
+                margin-left: 4px;
+                text-transform: uppercase;
+                transition: background-color .5s ease;
+
+                @media (max-width: 1200px) {
+                    padding: 10px;
+                }
+
+                &:hover {
+                    background-color: darken(variaveis.$corDeFundoBotaoPrincipal, 20%);
+                }
+
+                img {
+                    max-width: 50px;
+                    align-items: center;
+                    padding-left: 2px;
+                }
+            }
+
+            &__secundario {
+                background-color: variaveis.$corDeFundoHeader;
+                border: none;
+                font-size: 11px;
+                padding: 12px;
+                text-transform: uppercase;
+                transition: background-color .5s ease;
+
+                @media (max-width: 1200px) {
+                    padding: 8px;
+                }
+
+                a {
+                    color: variaveis.$corDaFonte;
+                }
+
+                &:hover {
+                    background-color: variaveis.$corDeFundoBotaoSecundario;
+                }
+            }
+        }
+
+        .left {
+            margin: 0;
+            padding: 0;
+
+            @media (max-width: 1200px) {
+                padding: 2px;
+                display: flex;
+            }
+        }
+    }
+}
+
+.mostra {
+    display: none;  
+}
+
+.header__container__menu-hamburguer {
+
+    @media (min-width: 1201px) {
+        display: none;
+    }
+
+    @media (max-width: 1200px) {
+        background-color: variaveis.$corDeFundoHeader;
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: 11px;
+        color: variaveis.$corDaFonte;
+    }
+
+    &__list {
+        width: 938px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media (max-width: 1012px) {
+            width: 696px;
+        }
+
+        @media (max-width: 767px) {
+            width: 508px;
+        }
+
+        &__item {
+            border-top: 1px solid;
+            color: variaveis.$corDaFonte;
+            padding-bottom: 10px;
+            padding-left: 8px;
+            padding-right: 14px;
+            padding-top: 16px;
+            width: 100%;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+// #burger-btn {}
+
+#burger-btn div:nth-child(1) {
+    top: 0px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#burger-btn div:nth-child(2) {
+    top: 18px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#burger-btn div:nth-child(3) {
+    top: 36px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#burger-btn.open div:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: -3px;
+    left: 8px;
+}
+
+#burger-btn.open div:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+#burger-btn.open div:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 39px;
+    left: 8px;
+}
